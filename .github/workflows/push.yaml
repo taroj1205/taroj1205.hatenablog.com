@@ -22,8 +22,6 @@ jobs:
       run: |
         cd ${GITHUB_WORKSPACE}
 
-        git pull origin HEAD:master
-
         echo 'git initialize'
         git config --global user.name "${GIT_NAME}"
         git config --global user.email "${GIT_MAIL}"
@@ -43,4 +41,5 @@ jobs:
           git commit -m "Pull articles (automatic commit)" ;\
         fi
 
+        git pull origin HEAD:master
         git push origin HEAD:master
