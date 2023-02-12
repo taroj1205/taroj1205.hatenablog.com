@@ -5,8 +5,8 @@ schedule:
 - cron: '0 * * * *'
 
 jobs:
-    pull:
-        runs-on: ubuntu-latest
+  pull:
+    runs-on: ubuntu-latest
     steps:
         - name: Checkout repository
           uses: actions/checkout@v2
