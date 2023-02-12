@@ -1,16 +1,16 @@
 name: Pull
 
 on:
-schedule:
-- cron: '0 * * * *'
+  schedule:
+    - cron: '0 * * * *'
 
 jobs:
   pull:
     runs-on: ubuntu-latest
 
     steps:  
-        - name: Checkout repository
-          uses: actions/checkout@v2
+    - name: Checkout repository
+      uses: actions/checkout@v2
 
     - name: Deploy and Commit
       env:
